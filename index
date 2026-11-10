@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>わたしのARキャラクター</title>
+
+  <script type="module"
+    src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      text-align: center;
+      background: #f8f5ef;
+      color: #444;
+    }
+
+    h1 {
+      margin-top: 40px;
+    }
+
+    model-viewer {
+      width: 100%;
+      height: 65vh;
+      background: #f8f5ef;
+    }
+
+    p {
+      padding: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>こんにちは！</h1>
+  <p>キャラクターを現実の世界に呼び出そう！</p>
+
+  <model-viewer
+    src="shikaku.usdz"
+    ios-src="shikaku.usdz"
+    ar
+    ar-modes="quick-look"
+    camera-controls
+    shadow-intensity="1"
+    alt="ARキャラクター">
+
+  </model-viewer>
+
+  <p>「AR」ボタンを押して床に配置してね！</p>
+</body>
+</html>
